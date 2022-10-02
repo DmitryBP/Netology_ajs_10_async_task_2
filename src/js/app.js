@@ -1,4 +1,4 @@
 import GameSavingLoader from './GameSavingLoader.js';
 
-GameSavingLoader.load()
-  
+const saving = GameSavingLoader.load();
+console.log(saving);

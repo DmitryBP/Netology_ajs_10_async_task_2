@@ -13,7 +13,6 @@ export default function read() {
           bufferView[i] = input.charCodeAt(i);
         }
         resolve(buffer);
-        console.log(buffer.byteLength);
       })(data);
     }, 500);
   });
