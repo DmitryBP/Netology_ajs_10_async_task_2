@@ -12,11 +12,4 @@ import Undead from "./classes/Characters/Undead";
 import Validator from "./classes/Validator";
 import Zombie from "./classes/Characters/Zombie";
 import ArrayBufferConverter from "./classes/ArrayBufferConverter";
-import GameSavingLoader from "./classes/SaveGame/GameSavingLoader";
 
-GameSavingLoader.load().then((saving) => {
-  console.log(saving);
-  // saving объект класса GameSaving
-}, (error) => {
-  console.log(error);
-});
