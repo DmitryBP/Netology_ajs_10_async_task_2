@@ -3,8 +3,12 @@ import read from "./reader";
 
 export default class GameSavingLoader {
   static async load() {
-    const dataBoofer = await read();
-    const saving = await json(dataBoofer);
-    return JSON.parse(saving);
+    try {
+      const dataBoofer = await read();
+      const saving = await json(dataBoofer);
+      return JSON.parse(saving);
+    } catch (error) {
+      throw new Error('Произошла ошибка' + error);
+    }
   }
 }

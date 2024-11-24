@@ -26,4 +26,14 @@ describe("GameSavingLoader", () => {
       expect(saving).toEqual(JSON.parse(mockJsonString));
     });
   });
+
+  test("Должна перехватываться ошибка", async () => {
+    read.mockReturnValue(
+      Promise.reject(new Error("Не удалось прочитать данные"))
+    );
+
+    await expect(GameSavingLoader.load()).rejects.toThrow(
+      "Не удалось прочитать данные"
+    );
+  });
 });
