@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/qkl990a7f7rt85ks?svg=true)](https://ci.appveyor.com/project/DmitryBP/netology-ajs-10-async-task-1)
+[![Build status](https://ci.appveyor.com/api/projects/status/le5ssjubcanq62o0?svg=true)](https://ci.appveyor.com/project/DmitryBP/netology-ajs-10-async-task-2-and-3)
 
 # Домашнее задание к лекции «Promises, async/await»
 
